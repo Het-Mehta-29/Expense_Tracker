@@ -40,7 +40,7 @@ router.delete("/:Id", async (req, res) => {
     try {
         const { Id } = req.params;
 
-        if (isNaN(parseInt(id))) {
+        if (isNaN(parseInt(Id))) {
             res.status(400).json({ message: "Invalid Transaction id " });
         }
         const result = await sql` DELETE FROM transactions WHERE id=${Id} RETURNING *`;
@@ -55,7 +55,7 @@ router.delete("/:Id", async (req, res) => {
     }
 })
 
-router.get("/: userId", async (req, res) => {
+router.get("/:userId/summary", async (req, res) => {
     try {
         const { userId } = req.params;
 

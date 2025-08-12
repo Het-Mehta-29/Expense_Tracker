@@ -1,5 +1,5 @@
 import { Redis } from '@upstash/redis';
-import { Ratelimit } from "@upstach/ratelimit";
+import { Ratelimit } from "@upstash/ratelimit";
 import "dotenv/config";
 
 const ratelimiter = new Ratelimit({
