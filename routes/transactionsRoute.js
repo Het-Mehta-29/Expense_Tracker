@@ -76,3 +76,4 @@ router.get("/:userId/summary", async (req, res) => {
     }
 })
 
+export default router;
