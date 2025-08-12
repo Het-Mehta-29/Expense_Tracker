@@ -1,4 +1,4 @@
-import upstashLimiter from "../src/config/upstash.js";
+import upstashLimiter from "../config/upstash.js";
 
 const rateLimiterMiddleware = async (req, res, next) => {
     try {
